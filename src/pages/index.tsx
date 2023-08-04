@@ -26,7 +26,7 @@ export default function Home() {
                     <Box sx={{ textAlign: 'center', padding: '15px' }}>
                         Container com grid de 12 estatico
                     </Box>
-                    <Grid container spacing={1}>
+                    <Grid container spacing={2}>
                         <Grid item lg={1} md={1} sm={1} xs={1} >
                             <Box sx={{ border: '1px solid blue', height: '400px' }}>
                                 Grid 1
@@ -94,9 +94,9 @@ export default function Home() {
 
                 <Container sx={{ height: '100%', background: '#CCC' }}>
                     <Box sx={{ textAlign: 'center', padding: '15px' }}>
-                        Container com grid de 12 dinamico (LG 12 / MD 2 / SM 3 / XS 4)
+                        Container com grid de 12 dinamico (LG 12 / MD 6 de 12 / SM 4 de 12 / XS 3 de 12)
                     </Box>
-                    <Grid container spacing={1}>
+                    <Grid container spacing={2}>
                         <Grid item lg={1} md={2} sm={3} xs={4}>
                             <Box sx={{ border: '1px solid blue', height: '250px' }}>
                                 Grid 1
@@ -164,9 +164,9 @@ export default function Home() {
 
                 <Container sx={{ height: '100%', background: '#CCC' }}>
                     <Box sx={{ textAlign: 'center', padding: '15px' }}>
-                        Container com grid de 12 dinamico (LG 3 / MD 4 / SM 6 / XS 12)
+                        Container com grid de 12 dinamico (LG 4 de 12 / MD 3 de 12 / SM 2 de 12 / XS 1 de 12)
                     </Box>
-                    <Grid container spacing={1}>
+                    <Grid container spacing={2}>
                         <Grid item lg={3} md={4} sm={6} xs={12}>
                             <Box sx={{ border: '1px solid blue', height: '250px' }}>
                                 Grid 1
