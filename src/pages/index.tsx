@@ -242,6 +242,28 @@ export default function Home() {
                 </Container>
 
                 <Box sx={{ margin: '50px 0' }}></Box>
+
+                <Container sx={{ height: '100%', background: '#CCC' }}>
+                    <Box sx={{ textAlign: 'center', padding: '15px' }}>
+                        Container banner profile (LG 7 e 5 / MD 7 e 5 / SM 12 / XS 12)
+                        <br />
+                        (largura tela = {size && size?.width})
+                    </Box>
+                    <Grid container spacing={2}>
+                        <Grid item lg={7} md={7} sm={12} xs={12}>
+                            <Box sx={{ border: '1px solid blue', height: '350px' }}>
+                                Dados do user
+                            </Box>
+                        </Grid>
+                        <Grid item lg={5} md={5} sm={6} xs={12}>
+                            <Box sx={{ border: '1px solid blue', height: '350px' }}>
+                                foto do user
+                            </Box>
+                        </Grid>
+                    </Grid>
+                </Container>
+
+                <Box sx={{ margin: '50px 0' }}></Box>
             </Box>
         </Fragment>
     )
