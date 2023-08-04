@@ -1,9 +1,12 @@
+import useWindowSize from '@/core/useWindowSize'
 import { Box, Button, Container, Grid } from '@mui/material'
 import { Fragment, useState } from 'react'
 
 export default function Home() {
 
     const [showMenu, setShowMenu] = useState(false)
+
+    const { size } = useWindowSize()
 
     return (
         <Fragment>
@@ -15,6 +18,8 @@ export default function Home() {
             <Box sx={{ marginLeft: showMenu ? '84px' : '0' }}>
                 <Container sx={{ height: '800px', background: '#CCC' }}>
                     container
+                    <br />
+                    (largura tela = {size && size?.width})
                     <Box sx={{ marginTop: '24px' }}>
                         <Button onClick={() => setShowMenu(!showMenu)} variant='contained'>{showMenu ? 'Esconder menu' : 'Mostrar menu'}</Button>
                     </Box>
@@ -25,6 +30,8 @@ export default function Home() {
                 <Container sx={{ height: '100%', background: '#CCC' }}>
                     <Box sx={{ textAlign: 'center', padding: '15px' }}>
                         Container com grid de 12 estatico
+                        <br />
+                        (largura tela = {size && size?.width})
                     </Box>
                     <Grid container spacing={2}>
                         <Grid item lg={1} md={1} sm={1} xs={1} >
@@ -95,6 +102,8 @@ export default function Home() {
                 <Container sx={{ height: '100%', background: '#CCC' }}>
                     <Box sx={{ textAlign: 'center', padding: '15px' }}>
                         Container com grid de 12 dinamico (LG 12 / MD 6 de 12 / SM 4 de 12 / XS 3 de 12)
+                        <br />
+                        (largura tela = {size && size?.width})
                     </Box>
                     <Grid container spacing={2}>
                         <Grid item lg={1} md={2} sm={3} xs={4}>
@@ -165,6 +174,8 @@ export default function Home() {
                 <Container sx={{ height: '100%', background: '#CCC' }}>
                     <Box sx={{ textAlign: 'center', padding: '15px' }}>
                         Container com grid de 12 dinamico (LG 4 de 12 / MD 3 de 12 / SM 2 de 12 / XS 1 de 12)
+                        <br />
+                        (largura tela = {size && size?.width})
                     </Box>
                     <Grid container spacing={2}>
                         <Grid item lg={3} md={4} sm={6} xs={12}>
