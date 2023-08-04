@@ -255,7 +255,7 @@ export default function Home() {
                                 Dados do user
                             </Box>
                         </Grid>
-                        <Grid item lg={5} md={5} sm={6} xs={12}>
+                        <Grid item lg={5} md={5} sm={12} xs={12}>
                             <Box sx={{ border: '1px solid blue', height: '350px' }}>
                                 foto do user
                             </Box>
